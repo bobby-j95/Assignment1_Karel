@@ -18,6 +18,7 @@ public class VotingBox extends SuperKarel {
 				
 	}
 	
+	/*This method checks above for a beeper and changes Karel's direction to look below*/
 	private void checkAbove() {
 		turnLeft();
 		move();
@@ -28,6 +29,7 @@ public class VotingBox extends SuperKarel {
 		checkBelow();
 	}
 	
+	/*This method checks below for a beeper and changes Karel's direction to face normally and walk forward*/
 	private void checkBelow() {
 		movementChecker();
 		while(beepersPresent()) {
